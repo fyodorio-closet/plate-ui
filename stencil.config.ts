@@ -1,8 +1,10 @@
-import { Config } from '@stencil/core';
+import {Config} from '@stencil/core';
+
+const {sass} = require('@stencil/sass');
 
 export const config: Config = {
-  namespace: 'mycomponent',
-  outputTargets:[
+  namespace: 'plate-ui',
+  outputTargets: [
     {
       type: 'dist'
     },
@@ -10,5 +12,8 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null
     }
+  ],
+  plugins: [
+    sass()
   ]
 };
