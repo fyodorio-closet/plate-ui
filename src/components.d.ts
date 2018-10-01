@@ -22,15 +22,20 @@ export namespace Components {
     'last'?: string;
     'middle'?: string;
   }
+
+  interface PlateButton {}
+  interface PlateButtonAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
     'MyComponent': Components.MyComponent;
+    'PlateButton': Components.PlateButton;
   }
 
   interface StencilIntrinsicElements {
     'my-component': Components.MyComponentAttributes;
+    'plate-button': Components.PlateButtonAttributes;
   }
 
 
@@ -40,12 +45,20 @@ declare global {
     new (): HTMLMyComponentElement;
   };
 
+  interface HTMLPlateButtonElement extends Components.PlateButton, HTMLStencilElement {}
+  var HTMLPlateButtonElement: {
+    prototype: HTMLPlateButtonElement;
+    new (): HTMLPlateButtonElement;
+  };
+
   interface HTMLElementTagNameMap {
     'my-component': HTMLMyComponentElement
+    'plate-button': HTMLPlateButtonElement
   }
 
   interface ElementTagNameMap {
     'my-component': HTMLMyComponentElement;
+    'plate-button': HTMLPlateButtonElement;
   }
 
 
