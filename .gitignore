@@ -18,6 +18,8 @@ log.txt
 .versions/
 node_modules/
 $RECYCLE.BIN/
+package-lock.json
+yarn.lock
 
 .DS_Store
 Thumbs.db

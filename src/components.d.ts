@@ -12,38 +12,19 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface MyComponent {
-    'first': string;
-    'last': string;
-    'middle': string;
-  }
-  interface MyComponentAttributes extends StencilHTMLAttributes {
-    'first'?: string;
-    'last'?: string;
-    'middle'?: string;
-  }
-
   interface PlateButton {}
   interface PlateButtonAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'MyComponent': Components.MyComponent;
     'PlateButton': Components.PlateButton;
   }
 
   interface StencilIntrinsicElements {
-    'my-component': Components.MyComponentAttributes;
     'plate-button': Components.PlateButtonAttributes;
   }
 
-
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
-  };
 
   interface HTMLPlateButtonElement extends Components.PlateButton, HTMLStencilElement {}
   var HTMLPlateButtonElement: {
@@ -52,12 +33,10 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement
     'plate-button': HTMLPlateButtonElement
   }
 
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
     'plate-button': HTMLPlateButtonElement;
   }
 
