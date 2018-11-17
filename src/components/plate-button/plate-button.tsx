@@ -1,5 +1,6 @@
 // https://material.io/design/components/buttons.html
-import {Component, Prop} from "@stencil/core";
+import {Component, Prop} from '@stencil/core';
+import {CssClassMap} from '../../global/interfaces';
 
 @Component({
 	tag: 'plate-button',
@@ -15,14 +16,22 @@ export class PlateButton {
   icon: string;
   @Prop()
   elevation: number;
-  @Prop()
-  color: 'primary' | 'accent';
 
   render() {
-		return (
-			<button class="plate-button">
+    const classMap = this.getCssClassMap();
+
+    return (
+			<button class={classMap}>
 				<slot/>
 			</button>
 		);
 	}
+
+  private getCssClassMap(): CssClassMap {
+    return {
+      [this.type]: true,
+      [this.shape]: true,
+      [`elevation-${this.elevation}`]: true
+    };
+  }
 }

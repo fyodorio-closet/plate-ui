@@ -1,11 +1,11 @@
-@import '../../styles/variables';
+@import '../../global/variables';
 
 :host([disabled]) {
   pointer-events: none;
   opacity: 0.4;
 }
 
-.plate-button {
+button {
 	min-width: 64px;
 	height: 36px;
 	padding: 0 16px;
@@ -13,9 +13,32 @@
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;
-	background-color: $plate-blue;
-	color: #F5F0FE;
-	border-radius: 4px;
 	border-style: none;
-	box-shadow: $level-1;
+  &.text {}
+  &.outlined {}
+  &.contained {
+    background-color: $plate-primary;
+    color: $plate-white;
+  }
+  &.rectangle {}
+  &.rounded {
+    border-radius: 4px;
+  }
+  &.shaped {}
+  &.octagon {}
+  &.elevation-1 {
+    box-shadow: $level-1;
+  }
+  &.elevation-2 {
+    box-shadow: $level-2;
+  }
+  &.elevation-3 {
+    box-shadow: $level-3;
+  }
+  &.elevation-4 {
+    box-shadow: $level-4;
+  }
+  &.elevation-5 {
+    box-shadow: $level-5;
+  }
 }
