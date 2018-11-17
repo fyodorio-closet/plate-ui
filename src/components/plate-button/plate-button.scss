@@ -2,6 +2,7 @@
 
 :host([disabled]) {
   pointer-events: none;
+  box-shadow: none;
   opacity: 0.4;
 }
 
@@ -13,19 +14,8 @@ button {
 	font-size: 16px;
 	font-weight: 500;
 	cursor: pointer;
+  color: $plate-primary;
 	border-style: none;
-  &.text {}
-  &.outlined {}
-  &.contained {
-    background-color: $plate-primary;
-    color: $plate-white;
-  }
-  &.rectangle {}
-  &.rounded {
-    border-radius: 4px;
-  }
-  &.shaped {}
-  &.octagon {}
   &.elevation-1 {
     box-shadow: $level-1;
   }
@@ -40,5 +30,26 @@ button {
   }
   &.elevation-5 {
     box-shadow: $level-5;
+  }
+  &.text {
+    box-shadow: none;
+  }
+  &.outlined {
+    border: 1px solid rgba(0,0,0,0.12);
+    box-shadow: none;
+  }
+  &.contained {
+    background-color: $plate-primary;
+    color: $plate-white;
+  }
+  &.rectangle {}
+  &.rounded {
+    border-radius: 4px;
+  }
+  &.shaped {
+    border-radius: 18px;
+  }
+  &.octagon {
+    clip-path: polygon(9px 0%, calc(100% - 9px) 0%, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0% calc(100% - 9px), 0% 9px);
   }
 }
