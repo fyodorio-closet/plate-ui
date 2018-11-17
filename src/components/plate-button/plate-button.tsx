@@ -1,4 +1,5 @@
-import {Component} from "@stencil/core";
+// https://material.io/design/components/buttons.html
+import {Component, Prop} from "@stencil/core";
 
 @Component({
 	tag: 'plate-button',
@@ -6,7 +7,18 @@ import {Component} from "@stencil/core";
 	shadow: true
 })
 export class PlateButton {
-	render() {
+  @Prop()
+  type: 'text' | 'outlined' | 'contained';
+  @Prop()
+  shape: 'rectangle' | 'rounded' | 'shaped' | 'octagon';
+  @Prop()
+  icon: string;
+  @Prop()
+  elevation: number;
+  @Prop()
+  color: 'primary' | 'accent';
+
+  render() {
 		return (
 			<button class="plate-button">
 				<slot/>

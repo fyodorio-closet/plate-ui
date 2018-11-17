@@ -12,8 +12,20 @@ import '@stencil/core';
 
 export namespace Components {
 
-  interface PlateButton {}
-  interface PlateButtonAttributes extends StencilHTMLAttributes {}
+  interface PlateButton {
+    'color': 'primary' | 'accent';
+    'elevation': number;
+    'icon': string;
+    'shape': 'rectangle' | 'rounded' | 'shaped' | 'octagon';
+    'type': 'text' | 'outlined' | 'contained';
+  }
+  interface PlateButtonAttributes extends StencilHTMLAttributes {
+    'color'?: 'primary' | 'accent';
+    'elevation'?: number;
+    'icon'?: string;
+    'shape'?: 'rectangle' | 'rounded' | 'shaped' | 'octagon';
+    'type'?: 'text' | 'outlined' | 'contained';
+  }
 }
 
 declare global {
