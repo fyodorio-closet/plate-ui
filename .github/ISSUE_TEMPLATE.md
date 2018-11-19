@@ -1,32 +1,37 @@
-**Resources:**
-Before submitting an issue, please consult our [docs](https://stenciljs.com/).
+<!--- Provide a general summary of the issue in the Title above -->
 
-**Stencil version:** (run `npm list @stencil/core` from a terminal/cmd prompt and paste output below):
-
-```
- insert the output from npm list @stencil/core here
-```
-
-**I'm submitting a ...**  (check one with "x")
-[ ] bug report
-[ ] feature request
-[ ] support request => Please do not submit support requests here, use one of these channels: https://forum.ionicframework.com/ or https://stencil-worldwide.slack.com
-
-**Current behavior:**
-<!-- Describe how the bug manifests. -->
-
-**Expected behavior:**
-<!-- Describe what the behavior would be without the bug. -->
-
-**Steps to reproduce:**
-<!-- If you are able to illustrate the bug or feature request with an example, please provide steps to reproduce and if possible a demo
+<!--
+    Thank you very much for contributing to this project by creating an issue! ❤️
+    To avoid duplicate issues we ask you to check off the following list.
 -->
 
-**Related code:**
+<!-- Checked checkbox should look like this: [x] -->
+- [ ] I have searched the [issues](https://github.com/loenko/plate-ui/issues) of this repository and believe that this is not a duplicate.
 
-```
-insert any relevant code here
-```
+## Expected Behavior
+<!--- 
+    If you're describing a bug, tell us what should happen.
+    If you're suggesting a change/improvement, tell us how it should work. 
+-->
 
-**Other information:**
-<!-- List any other information that is relevant to your issue. Stack traces, related issues, suggestions on how to fix, Stack Overflow links, forum links, etc. -->
+## Current Behavior
+<!--- 
+    If describing a bug, tell us what happens instead of the expected behavior.
+    If suggesting a change/improvement, explain the difference from current behavior. 
+-->
+
+## Steps to Reproduce (for bugs)
+
+1.
+2.
+3.
+4.
+
+## Context
+<!--- 
+    How has this issue affected you? What are you trying to accomplish? 
+    Providing context helps us come up with a solution that is most useful in the real world.
+-->    
+
+## Your Environment
+<!--- Include as many relevant details about the environment with which you experienced the bug. -->
