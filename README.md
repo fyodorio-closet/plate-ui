@@ -1,4 +1,5 @@
 # Plate UI
+[![Join the chat at https://gitter.im/Plate-UI/Lobby](https://badges.gitter.im/Plate-UI/Lobby.svg)](https://gitter.im/Plate-UI/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ### Framework-Agnostic Stencil-Powered Material Design Components Implementation
 
