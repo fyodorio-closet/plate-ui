@@ -1,6 +1,9 @@
 # Plate UI
 [![Join the chat at https://gitter.im/Plate-UI/Lobby](https://badges.gitter.im/Plate-UI/Lobby.svg)](https://gitter.im/Plate-UI/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![GitHub license](https://img.shields.io/github/license/loenko/plate-ui.svg)](https://github.com/loenko/plate-ui/blob/master/LICENSE)
 ### Framework-Agnostic Stencil-Powered Material Design Components Implementation
 
 #### Currently implemented list of components:
