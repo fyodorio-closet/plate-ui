@@ -6,6 +6,8 @@
 [![GitHub license](https://img.shields.io/github/license/loenko/plate-ui.svg)](https://github.com/loenko/plate-ui/blob/master/LICENSE)
 ### Framework-Agnostic Stencil-Powered Material Design Components Implementation
 
+<img src="https://raw.githubusercontent.com/loenko/file-storage/master/plate-ui.png" alt="plate-ui" width="360px;" >
+
 #### Currently implemented list of components:
 * Button
 
